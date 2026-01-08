@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 15px 40px;
+  background: #03ae2e;
+  color: white;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-area img {
+  width: 40px;
+}
+
+.nav-center ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.btn {
+  background:#1e88e5;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #1ee55a, #32ed0d);
+  color: white;
+}
+
+.btn-primary {
+  background:#1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card h2 {
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+  padding: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+form input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 300px;
+}
+
+.login-card input,
+.login-card button {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card-login {
+  position: relative;
+}
+
+.btn-back-top {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.daftar-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.daftar-text a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.daftar-text a:hover {
+  text-decoration: underline;
+}
+
+.card-profil {
+  position: relative;
+}
+
+.btn-back-top {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+
+.card-register {
+  position: relative;
+}
+
+.btn-back-top {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header tabel */
+th {
+  text-align: center;
+}
+
+/* Kolom Nama (kolom 1) rata kiri */
+td:first-child {
+  text-align: center;
+}
+
+/* Kolom Jumlah & Kategori rata tengah */
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+}
+
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 15px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo-area {
+    justify-content: center;
+  }
+
+  .nav-center ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-right {
+    text-align: center;
+  }
+
+  /* Konten */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  /* Tabel transaksi */
+  table {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

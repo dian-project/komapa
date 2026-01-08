@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-area">
+    <img src="logo.png">
+    <span>KOMAPA</span>
+  </div>
+</header>
+
+<section class="container">
+  <div class="card">
+     <a href="index.html" class="btn-primary btn-back-top">
+      ← Back
+    </a>
+
+
+<main class="container">
+  <div class="card form-card">
+    <h2>Input Transaksi</h2>
+    <form id="formTransaksi">
+      <input type="text" id="nama" placeholder="Nama Anggota">
+      <input type="number" id="jumlah" placeholder="Jumlah">
+      <select id="kategori">
+        <option value="">Pilih Kategori</option>
+        <option>Simpan</option>
+        <option>Pinjam</option>
+      </select>
+      <button class="btn-primary">Simpan</button>
+      <p id="error"></p>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Daftar Transaksi</h2>
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Jumlah</th>
+        <th>Kategori</th>
+      </tr>
+      <tbody id="tabelTransaksi"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 KOMA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
