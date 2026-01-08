@@ -28,4 +28,4 @@ Aplikasi ini dibuat sebagai tugas mata kuliah Pemrograman Web serta sebagai
 simulasi sistem informasi simpan pinjam koperasi mahasiswa.
 
 ## Demo Website
-🔗 https://usernamegithub.github.io/komapa/
+🔗 https://dian-project.github.io/komapa/
